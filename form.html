@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | Capture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="thanks">
+        <h2>Thank you for your submission!</h2>
+        <p>Your booking request has been received. I will get back to you within 24-48 hours to discuss the details and confirm your session.</p>
+        <p>In the meantime, feel free to explore my portfolio or connect with me on social media for updates and inspiration.</p>
+        <a href="index.html" class="cta-btn">Back to Home</a>
+    </div>
+    <div class="form-container">
+        <div class="form-content">
+            <header >
+                <h2>Book Now</h2>
+                <small>Enter your details to get started</small>
+            </header>
+
+            <form>
+                <div class="entry">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="entry">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="entry">
+                    <label>Phone</label>
+                    <input type="tel" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="entry">
+                    <label>Location for Shoot</label>
+                    <input type="text" placeholder="Enter your location Within Nigeria" required>
+                </div>
+
+                <div class="entry">
+                    <label for="shoot-type">Select a Shoot Style</label>
+                    <select id="shoot-type" name="shoot_type" required>
+                        <option value="" disabled selected>Select a session style...</option>
+                        <option value="portrait">Portrait & Lifestyle</option>
+                        <option value="wedding">Wedding & Engagement</option>
+                        <option value="commercial">Commercial & Product</option>
+                        <option value="real-estate">Real Estate & Architecture</option>
+                        <option value="event">Event Coverage</option>
+                        <option value="travel">Wildlife & Landscape</option>
+                    </select>
+                </div>
+
+                <div class="entry">
+                    <label for="shoot-date">Preferred Date</label>
+                    <input type="date" id="shoot-date" name="shoot_date" required>
+                </div>
+
+                <div class="entry" style="grid-column: span 2;">
+                    <label for="additional-info">Additional Information</label>
+                    <textarea id="additional-info" name="additional_info" placeholder="Tell me more about your vision, preferences, or any specific ideas you have in mind..." rows="4"></textarea>
+                </div>
+
+                <div class="button-div" style="grid-column: span 2;">
+                    <button class="cancel-btn" type="reset" onclick="history.back()">Cancel</button>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
+
+            
+            </form>
+            
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
