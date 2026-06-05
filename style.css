@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #0b0b0b;
+    --text-color: #f5f5f5;
+    --accent-color: #ffffff;
+    --muted-color: #a0a0a0;
+    --card-bg: #141414;
+    --form-bg: #FAFAF8;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted-color);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: var(--accent-color);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
+                url('https://picsum.photos/1920/1080?random=20') no-repeat center center/cover;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.hero-content p {
+    color: var(--muted-color);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.cta-btn {
+    border: 1px solid var(--accent-color);
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-btn:hover{
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1.5rem 5%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-links {
+        gap: 1.5rem;
+    }
+    .hero {
+        padding: 0 5%;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .portfolio-container, .about-container {
+        padding: 12rem 5% 2rem 5%;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
