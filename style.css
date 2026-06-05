@@ -102,6 +102,175 @@ a {
     color: var(--bg-color);
 }
 
+.about-container {
+    padding: 8rem 10% 4rem 10%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    color: var(--muted-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.contact-info {
+    margin-top: 2.5rem;
+    border-top: 1px solid #222;
+    padding-top: 2rem;
+}
+
+.contact-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+
+.thanks{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    color: var(--text-color);
+    position: fixed;
+    z-index: 100;
+}
+
+.form-container{
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgb(82, 86, 102, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content{
+    background-color: var(--form-bg);
+    color:#000000;
+    max-width:100%;
+    max-height: 100%;
+    padding:25px;
+    border-radius: 16px;
+}
+
+.form-content header{
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.form-content h2{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.form-content small{
+    font-size: 14px;
+    font-weight: regular;
+    line-height: 20px;
+    color: #99A1AF;
+}
+
+form{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px 60px;
+}
+
+.entry{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 100%;
+}
+
+input, textarea, select, option{
+    padding: 5px;
+    max-width: 100%;
+    border-radius: 10px;
+    color: #000000 ;
+    border: 1px solid rgba(0,0,0,0.3);
+    text-emphasis-color: green;
+    background-color: var(--bg-input);
+    resize: none;
+}
+
+form :placeholder-shown{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-div{
+    gap: 16px;
+    margin-top: 24px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.cancel-btn,
+.submit-btn{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #5f656c;
+    border: none;
+    width: 100%;
+    max-width: 198px;
+    height: 48px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.cancel-btn:hover,
+.submit-btn:hover{
+    background-color: var(--muted-color);
+    color: #fff;
+}
+
+
 @media (max-width: 768px) {
     .navbar {
         padding: 1.5rem 5%;
