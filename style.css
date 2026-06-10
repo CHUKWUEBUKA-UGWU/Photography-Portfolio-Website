@@ -268,7 +268,7 @@ a {
 .form-content{
     background-color: var(--form-bg);
     color:#000000;
-    max-width:100%;
+    width: 600px;
     max-height: 100%;
     padding:25px;
     border-radius: 16px;
@@ -337,7 +337,7 @@ form :placeholder-shown{
     color: #5f656c;
     border: none;
     width: 100%;
-    max-width: 198px;
+    max-width: 250px;
     height: 48px;
     border-radius: 10px;
     transition: all 0.3s ease;
