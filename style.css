@@ -376,4 +376,8 @@ form :placeholder-shown{
         align-items: center;
         gap: 2rem;
     }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
 }
