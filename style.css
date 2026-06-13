@@ -73,6 +73,7 @@ a {
 
 .hero-content {
     max-width: 600px;
+    margin-top: 2rem;
 }
 
 .hero-content h1 {
@@ -365,7 +366,6 @@ form :placeholder-shown{
     }
     .hero-content h1 {
         font-size: 2.5rem;
-        margin-top: 2rem;
     }
     .portfolio-container, .about-container {
         padding: 12rem 5% 2rem 5%;
