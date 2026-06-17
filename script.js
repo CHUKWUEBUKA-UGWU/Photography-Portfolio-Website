@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
   form.addEventListener('submit', function(event) {
-    // 1. Stop the page from refreshing
+    
     event.preventDefault();
 
     form.style.display = 'none';
